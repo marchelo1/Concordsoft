@@ -8,17 +8,13 @@
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
-<<<<<<< HEAD
   height: 3000px;
   /* Test size */
-=======
->>>>>>> c3cac594bfe83a194eabd69d424d63f5e6344ec9
 }
 
 header {
   background-image: url('/img/homepage.png');
   background-color: rgba(0, 0, 0, 0.6);
-<<<<<<< HEAD
   height: 64vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,103 +99,23 @@ header {
   top: 1px;
 }
 
-=======
-  height: 84vh;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-nav,
-nav * {
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  height: 10vh;
-  width: 90%;
-  margin-left: 50px;
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-}
-
-#logo {
-  width: 100px;
-  height: 100px;
-  padding: 0 1em 0 1em;
-}
-
-img {
-  max-width: 100%;
-}
-
-#navigation {
-  height: 100%;
-  margin-right: auto;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  height: 100%;
-  margin: 0;
-}
-
-li {
-  height: 100%;
-}
-
-a {
-  height: 100%;
-  transition: color 0.4s ease;
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 1px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  padding: 0 18px 0 18px;
-}
-
-a:hover {
-  color: #0000ff;
-  transition-delay: 0.3s;
-  -webkit-transition-delay: 0.3s;
-}
-
-/* #contact-btn {
-  float: right;
-} */
-
-.text-header {
-  color: #fff;
-}
->>>>>>> c3cac594bfe83a194eabd69d424d63f5e6344ec9
 
 .text-header {
   position: relative;
   margin: 20vh;
   text-align: center;
-<<<<<<< HEAD
   color: #fff;
-=======
->>>>>>> c3cac594bfe83a194eabd69d424d63f5e6344ec9
 }
 
 .text-header h4 {
   opacity: 0.6;
   margin-right: -20vh;
   font-weight: 400;
-<<<<<<< HEAD
   font-size: 2.0rem;
-=======
-  font-size: 1.3rem;
->>>>>>> c3cac594bfe83a194eabd69d424d63f5e6344ec9
 }
 
 .text-header h2 {
   font-weight: 300;
-<<<<<<< HEAD
   opacity: 0.8;
   font-size: 3rem;
 
@@ -338,19 +254,3 @@ a:hover {
   font-size: 1.5rem;
   font-weight: bold;
 }
-=======
-  opacity: 0.9;
-  font-size: 2rem;
-}
-
-.text-header h3 {
-  opacity: 0.6;
-  font-weight: 400;
-  color: blue;
-  font-size: 1.3rem;
-}
-
-/* I want later to add some color classes and modify  */
-/* primary-color = #FF5B4E;
-primary-text-color = #444;  */
->>>>>>> c3cac594bfe83a194eabd69d424d63f5e6344ec9
