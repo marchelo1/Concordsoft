@@ -1,15 +1,28 @@
-// const ss = document.querySelectorAll('.scrollspy');
-// M.ScrollSpy.init(ss, {});
+$(function () {
+
+    $('.tab-panels .tabs li').on('click', function () {
+
+        var $panel = $(this).closest('.tab-panels');
+
+        $panel.find('.tabs li.active').removeClass('active');
+        $(this).addClass('active');
+
+        //figure out which panel to show
+        var panelToShow = $(this).attr('rel');
 
 
-// var img = document.getElementById("myImg");
-// img.onclick = function () {
-//     modal.style.display = "block";
-// }
+        //hide current panel
+        $panel.find('.panel.active').slideUp(300, showNextPanel);
 
-// var span = document.getElementsByClassName("close")[0];
+        //show next panel
+        function showNextPanel() {
+            $(this).removeClass('active');
 
-// span.onclick = function () {
-//     modal.style.display = "none";
+            $('#' + panelToShow).slideDown(300, function () {
+                $(this).addClass('active');
+            });
+        }
+    });
 
-// }
+
+});

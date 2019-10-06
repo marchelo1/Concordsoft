@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+  <script src="jquery.js"></script>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
@@ -18,6 +19,8 @@
   <header>
     <nav class="nav-bar">
       <div class="logo"><img src="/img/logo.png" alt="logo"></div>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle" />
       <ul class="nav-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -154,56 +157,123 @@
           <div class="work-box">
             <h1>Workd With Us</h1>
             <div class="col-md-12">
-            <div class = "weOffer">
-              <div class = "weOffer1" id="clickOnFirst"><h4>We Offer</h4></div>
-              <div class = "weOffer2" id="clickOnSecond"><h4>Past Project</h4></div>
-           
+
+              <div class="tab-panels">
+                <div class="weOffer">
+                  <div class="weOffer1">
+                    <ul class="tabs">
+                      <li rel="panel1" class="active" id="clickOnFirst">
+                        <h4>We Offer</h4>
+                      </li>
+                  </div>
+                  <div class="weOffer2">
+                    <li rel="panel2" id="clickOnSecond">
+                      <h4>Past Project</h4>
+                    </li>
+                  </div>
+                  </ul>
+
+                </div>
               </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-            <img class="onchangeImg" src="/img/selected-page-1.png" alt="">
-        </div>
-        <div class="col-md-6">
-
-
-        <div class="col-md-6">
-          <div class="onchangeText">
-            <div class="text1">
-                <img class="onchangeLogo" src="img/onchangeLogo1.png">
-                <h1>Premium Quality</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus.</p>
             </div>
           </div>
-           
-            <div class="text1">
-                <img class="onchangeLogo" src="img/onchangeLogo2.png">
-              <h1>Nationalwide Installation</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non reiciendis.</p>
+
+          <div id="panel1" class=" panel active">
+            <div class="col-md-6">
+              <img class="onchangeImg" src="/img/selected-page-1.png" alt="">
             </div>
-          </div>
-          
-          <div class="col-md-6">
-            <div class="text1">
-                <img class="onchangeLogo" src="img/onchangeLogo3.png">
-                <h1>Efficient Project Management</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non Ea.</p> 
+            <div class="col-md-6">
+
+
+              <div class="col-md-6">
+                <div class="onchangeText">
+                  <div class="text1">
+                    <img class="onchangeLogo" src="img/onchangeLogo1.png">
+                    <h1>Premium Quality</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus.</p>
+                  </div>
+                </div>
+
+                <div class="text1">
+                  <img class="onchangeLogo" src="img/onchangeLogo2.png">
+                  <h1>Nationalwide Installation</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non
+                    reiciendis.</p>
+                </div>
               </div>
-           
-              
-              <div class="text1">
+
+              <div class="col-md-6">
+                <div class="text1">
+                  <img class="onchangeLogo" src="img/onchangeLogo3.png">
+                  <h1>Efficient Project Management</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non
+                    Ea.
+                  </p>
+                </div>
+
+
+                <div class="text1">
                   <img class="onchangeLogo" src="img/onchangeLogo4.png">
                   <h1>Customer Loyality</h1>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla.</p>
                 </div>
-          </div>
-      
+              </div>
 
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div id="panel2" class=" panel">
+        <div class="col-md-6">
+          <img class="onchangeImg2" src="/img/selected-page-2.png" alt="">
+        </div>
+        <div class="col-md-6">
+
+
+          <div class="col-md-6">
+            <div class="onchangeText">
+              <div class="text1">
+                <img class="onchangeLogo" src="img/onchangeLogo4.png">
+                <h1>Nationalwide Installation</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus.</p>
+              </div>
+            </div>
+
+            <div class="text1">
+              <img class="onchangeLogo" src="img/onchangeLogo3.png">
+              <h1>Nationalwide</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non
+                reiciendis.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="text1">
+              <img class="onchangeLogo" src="img/onchangeLogo2.png">
+              <h1>Meet the Units</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non
+                Ea.
+              </p>
+            </div>
+
+
+            <div class="text1">
+              <img class="onchangeLogo" src="img/onchangeLogo1.png">
+              <h1>What’s the Difference?</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
     </div>
 
-  <script src="js/index.js"></script>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
