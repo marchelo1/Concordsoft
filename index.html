@@ -7,33 +7,55 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
-  <script src="jquery.js"></script>
 
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
   <title>Website</title>
 </head>
 
 <body>
-  <header>
-    <nav class="nav-bar">
-      <div class="logo"><img src="/img/logo.png" alt="logo"></div>
-      <label for="toggle">&#9776;</label>
-      <input type="checkbox" id="toggle" />
-      <ul class="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#work">Why Work With Us</a></li>
-        <li><a href="#touch">Get In Touch</a></li>
-      </ul>
-      <a href="#contact" class="myButton">Contact</a>
-    </nav>
-    <div class="text-header">
-      <h4>Creative Visual Group</h4></br>
 
-      <h2>The #1` Partner in Production And Installation Of Expectation Exceedind Visual</h4></br>
+  <header>
+
+
+    <nav class="navbar .navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="navbar-header">
+            <div class="logo"><img src="/img/logo.png" alt="logo"></div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Why Work With Us</a></li>
+            <li><a href="#">Get In Touch</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+
+
+            <a href="#contact" class="myButton">Contact</a>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="text-header">
+      <h4>Creative Visual Group</h4>
+
+      <h2>The #1` Partner in Production And Installation Of Expectation Exceedind Visual</h4>
         <h3>Let's Work Tc</h3>
     </div>
   </header>
@@ -107,13 +129,13 @@
       </div>
 
       <div class="col-md-6 text-center border-both">
-        <div class="single-feature b">
+        <div class="single-feature">
           <h1>Signage</h1>
           <p><a href="#">Learn more</a></p>
         </div>
       </div>
 
-      <div class="col-md-6 text-center border-both-down">
+      <div class="col-md-6 text-center text-center-last border-both-down">
         <div class="single-feature">
           <h1>Get A Custom Quote</h1>
         </div>
@@ -148,132 +170,200 @@
       </div>
   </section>
 
-  <section id="work" class="workWithUs scrollspy">
+  <section class="workWithUs scrollspy">
     <div class="container">
       <div class="row">
 
         <div class="col-md-12">
 
           <div class="work-box">
-            <h1>Workd With Us</h1>
+            <h1>Work With Us</h1>
             <div class="col-md-12">
-
-              <div class="tab-panels">
-                <div class="weOffer">
-                  <div class="weOffer1">
-                    <ul class="tabs">
-                      <li rel="panel1" class="active" id="clickOnFirst">
-                        <h4>We Offer</h4>
-                      </li>
-                  </div>
-                  <div class="weOffer2">
-                    <li rel="panel2" id="clickOnSecond">
-                      <h4>Past Project</h4>
-                    </li>
-                  </div>
-                  </ul>
-
-                </div>
+              <div class="weOffer">
+                <h4><a data-toggle="collapse" href="#mydiv1" aria-expanded="false" aria-controls="mydiv1">We Offer</a>
+                </h4>
+                <h4><a data-toggle="collapse" href="#mydiv2" aria-expanded="false" aria-controls="mydiv2">Past
+                    Project</a></h4>
               </div>
-            </div>
-          </div>
-
-          <div id="panel1" class=" panel active">
-            <div class="col-md-6">
-              <img class="onchangeImg" src="/img/selected-page-1.png" alt="">
-            </div>
-            <div class="col-md-6">
-
-
-              <div class="col-md-6">
-                <div class="onchangeText">
-                  <div class="text1">
-                    <img class="onchangeLogo" src="img/onchangeLogo1.png">
-                    <h1>Premium Quality</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus.</p>
-                  </div>
-                </div>
-
-                <div class="text1">
-                  <img class="onchangeLogo" src="img/onchangeLogo2.png">
-                  <h1>Nationalwide Installation</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non
-                    reiciendis.</p>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="text1">
-                  <img class="onchangeLogo" src="img/onchangeLogo3.png">
-                  <h1>Efficient Project Management</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non
-                    Ea.
-                  </p>
-                </div>
-
-
-                <div class="text1">
-                  <img class="onchangeLogo" src="img/onchangeLogo4.png">
-                  <h1>Customer Loyality</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla.</p>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div id="panel2" class=" panel">
-        <div class="col-md-6">
-          <img class="onchangeImg2" src="/img/selected-page-2.png" alt="">
-        </div>
-        <div class="col-md-6">
 
+    <div class="collapse multi-collapse" id="mydiv1">
+      <div class="container">
+        <div class="row">
 
           <div class="col-md-6">
-            <div class="onchangeText">
+            <img class="onchangeImg" src="/img/selected-page-1.png" alt="">
+          </div>
+          <div class="col-md-6 onchangeTextAll">
+            <div class="col-md-6">
+              <div class="onchangeText">
+                <div class="text1">
+                  <img class="onchangeLogo" src="img/onchangeLogo1.png">
+                  <h1>Premium Quality</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus.</p>
+                </div>
+              </div>
+              <div class="text1">
+                <img class="onchangeLogo" src="img/onchangeLogo2.png">
+                <h1>Nationalwide Installation</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non
+                  reiciendis.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text1">
+                <img class="onchangeLogo" src="img/onchangeLogo3.png">
+                <h1>Efficient Project Management</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non Ea.
+                </p>
+              </div>
               <div class="text1">
                 <img class="onchangeLogo" src="img/onchangeLogo4.png">
-                <h1>Nationalwide Installation</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus.</p>
+                <h1>Customer Loyality</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="collapse multi-collapse" id="mydiv2">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-6">
+            <img class="onchangeImg" src="/img/selected-page-2.png" alt="">
+          </div>
+          <div class="col-md-6 onchangeTextAll">
+
+            <div class="col-md-6">
+              <div class="onchangeText">
+                <div class="text1">
+                  <img class="onchangeLogo" src="img/onchangeLogo3.png">
+                  <h1>Nationalwide Installation</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus.</p>
+                </div>
+              </div>
+
+              <div class="text1">
+                <img class="onchangeLogo" src="img/onchangeLogo4.png">
+                <h1>Efficient Project Management</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non
+                  reiciendis.</p>
               </div>
             </div>
 
-            <div class="text1">
-              <img class="onchangeLogo" src="img/onchangeLogo3.png">
-              <h1>Nationalwide</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non
-                reiciendis.</p>
+            <div class="col-md-6">
+              <div class="text1">
+                <img class="onchangeLogo" src="img/onchangeLogo2.png">
+                <h1> Premium Quality</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non Ea.
+                </p>
+              </div>
+
+
+              <div class="text1">
+                <img class="onchangeLogo" src="img/onchangeLogo1.png">
+                <h1>Customer Loyality</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla.</p>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="col-md-6">
-            <div class="text1">
-              <img class="onchangeLogo" src="img/onchangeLogo2.png">
-              <h1>Meet the Units</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla nesciunt natus non
-                Ea.
-              </p>
+  <section id="contactForm" class="getStarted scrollspy">
+
+    <div class="col-md-6 text-center border-bottom">
+      <div class="single-feature left-contact-form">
+        <h1>Ready to Get Started</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus rerum unde minima fugiat tempore illo.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-6 text-center text-center-last border-both-down">
+      <div class="single-feature">
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Mail" />
+          <input type="text" placeholder="Phone" />
+          <input type="text" placeholder="Type of Project" />
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-network">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="logo-bottom">
+            <img src="/img/logo.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eum libero fuga quibusdam quam.</p>
+          </div>
+
+          <div class="single">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter your email">
+              <span class="input-group-btn">
+                <button class="btn bg-black" type="submit"><i style="font-size:19px" class="fa">&#xf1d9;</i></button>
+              </span>
             </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <ul class="vertical-ul">
+            <li>About</a></li>
+            <li>Services</a></li>
+            <li>Portfolio</a></li>
+            <li>Get in Thouch</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <ul class="font-awesome-social">
+            <li><i class="fab fa-instagram"></i><span></span>Instagram</li>
+            <li><i class="fab fa-facebook-square"></i><span></span>Facebook</li>
+            <li><i class="fab fa-twitter"></i><span></span>Twitter</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+  </section>
 
-            <div class="text1">
-              <img class="onchangeLogo" src="img/onchangeLogo1.png">
-              <h1>What’s the Difference?</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptate nulla.</p>
-            </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="footer">
+
+          <div class="col-md-6 col-sm-6">
+            <p>@Creative Visual Group. All right reserved.
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <p>Privacy Policy</p>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <p>Terms of Services</p>
           </div>
 
         </div>
       </div>
-
-
-    </div>
     </div>
 
+  </footer>
 
-    <script src="js/index.js"></script>
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
